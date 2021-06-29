@@ -122,7 +122,9 @@ function playGame() {
 		moveEnemy();
 		if(keys.ArrowLeft && setting.x > 0) {
 			setting.x -= setting.speed;
-		}
+		}else if(keys.key == "Left" || keys.key == "ArrowLeft") {
+			leftPressed = true;
+	  }
 		if(keys.ArrowRight && setting.x < (gameArea.offsetWidth - car.offsetWidth)) {
 			setting.x += setting.speed;
 		}
