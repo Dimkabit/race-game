@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hide {
+	display: none;
+}
+.car, .enemy {
+	width: 50px;
+	height: 100px;
+	background: transparent url('./image/enemy6.png') center / cover no-repeat;
+	position: absolute;
+	
+}
+
+.game {
+	height: 100%;
+	display: flex;
+}
+
+.gameArea {
+	width: 300px;
+	height: 100%;
+	left: calc(50% - 150px);
+	position: absolute;
+	margin: 0 auto;
+	background: #222;
+	overflow: hidden;
+	
+}
+
+.line {
+	position: absolute;
+	width: 10px;
+	height: 50px;
+	background: #fff;
+	left: 145px;
+}
+
+.start {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 1rem 0;
+	text-align: center;
+	z-index: 10;
+	color: khaki;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	background: #000;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.btn {
+	background: rgb(226, 83, 83);
+	border-color: black;
+	border-image: none;
+	border-style: none;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 5px 15px;
+	font-size: 16px;
+}
+
+.btn:focus-visible {
+	outline: 0px;
+}
+.btn:hover {
+	background: rgb(216, 56, 56);
+}
+
+.btn:not(:last-child) {
+	margin-right: 30px;
+}
+
+.score {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	background: #000;
+	padding-bottom: 10px;
+	z-index: 20;
+	font-size: 1.5rem;
+	color: red;
+	text-align: center;
+	font-family: sans-serif;
+	
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+ }
